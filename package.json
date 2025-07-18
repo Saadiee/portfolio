@@ -14,9 +14,11 @@
     "@tailwindcss/vite": "^4.1.11",
     "@tanstack/react-router": "^1.127.9",
     "@tanstack/react-router-devtools": "^1.127.9",
+    "@types/react-scroll": "^1.8.10",
     "gsap": "^3.13.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-scroll": "^1.9.3",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
