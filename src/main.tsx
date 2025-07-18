@@ -13,5 +13,3 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     </div>
   </React.StrictMode>,
 );
-
-//className="relative w-screen min-h-screen overflow-x-hidden"
