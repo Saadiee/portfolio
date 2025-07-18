@@ -1,19 +1,17 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { createRouter, RouterProvider } from "@tanstack/react-router";
+// main.tsx
+import React from "react";
+import ReactDOM from "react-dom/client";
 import "./index.css";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
-import { routeTree } from "./routeTree.gen";
-const router = createRouter({ routeTree });
-
-declare module "@tanstack/react-router" {
-  interface Register {
-    router: typeof router;
-  }
-}
-
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <div className="relative w-screen min-h-screen overflow-x-hidden">
+      <Navbar />
+      <Hero />
+    </div>
+  </React.StrictMode>,
 );
+
+//className="relative w-screen min-h-screen overflow-x-hidden"
